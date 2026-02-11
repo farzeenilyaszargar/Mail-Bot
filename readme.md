@@ -2,13 +2,12 @@
 
 A bot that sends mails to everyone mentioned in the email list
 I have integrated AI in this so that everyone gets a custom mail.
-I will also perform a web crawl especially if it is a bussiness.
+
+Features:
+    - ~500 emails/day (rate limited for basic acc)
+    - AI based custom messaging personalised for each user (core msg is customized for each slightly)
+    - Uses the basic google API without any third party sources (independant)
 
 
-
-Web Crawl 
-
-
-
-Core Msg = "Pitch %company_name Our Bussiness Involving --- ";
+Thanks For Reading ;)
 

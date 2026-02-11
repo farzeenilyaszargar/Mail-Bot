@@ -1,5 +1,6 @@
 import json
 from engine import msgAI
+from sendMail import sendMail
 
 
 def makeEmailList():
@@ -10,15 +11,16 @@ def makeEmailList():
     return emailList
 
 
-def sendEmail(email):
-    pass
-
+def sendEmail(email, recieverMail):
+    sendMail(recieverMail)
+    # send generated email to the user via api  
 
 
 def main():
 
     emailList = makeEmailList()
     baseMsg = ""
+    attachments = []
 
     # No of mails to...
     print("The number of mails you are sending this to are: ", len(emailList))
@@ -27,7 +29,7 @@ def main():
 
     for i in emailList:
         msg = msgAI(baseMsg, i)
-        sendEmail(msg)
+        sendEmail(msg, i)
 
 
 
