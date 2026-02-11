@@ -11,14 +11,11 @@ def makeEmailList():
     return emailList
 
 
-def sendEmail(email, recieverMail):
-    sendMail(recieverMail)
-    # send generated email to the user via api  
-
 
 def main():
 
     emailList = makeEmailList()
+    subject = ""
     baseMsg = ""
     attachments = []
 
@@ -29,7 +26,7 @@ def main():
 
     for i in emailList:
         msg = msgAI(baseMsg, i)
-        sendEmail(msg, i)
+        sendMail(i, subject, msg)
 
 
 
