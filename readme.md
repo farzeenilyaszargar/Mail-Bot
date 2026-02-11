@@ -11,7 +11,4 @@ Web Crawl
 
 
 Core Msg = "Pitch %company_name Our Bussiness Involving --- ";
-^
-|
-This becomes the AI prompt
-# Mail-Bot
+
