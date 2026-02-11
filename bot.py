@@ -1,6 +1,6 @@
 import json
 from engine import msgAI
-from sendMail import sendMail
+from sendMail import gmail_send_message
 
 
 def makeEmailList():
@@ -10,14 +10,15 @@ def makeEmailList():
 
     return emailList
 
-
+def sendMail(receiver, subject, msg):
+    gmail_send_message(receiver, subject, msg)
 
 def main():
 
     emailList = makeEmailList()
-    subject = ""
-    baseMsg = ""
-    attachments = []
+    subject = "Nap Editor | The Next Big Update"
+    coreMsg = "I have made Nap IDE, which is just like cursor. Market it to the indivuduals properly using any method you know "
+    user = "Farzeen"
 
     # No of mails to...
     print("The number of mails you are sending this to are: ", len(emailList))
@@ -25,7 +26,7 @@ def main():
     # main engine
 
     for i in emailList:
-        msg = msgAI(baseMsg, i)
+        msg = msgAI(coreMsg, i, user)
         sendMail(i, subject, msg)
 
 
