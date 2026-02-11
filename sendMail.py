@@ -52,9 +52,4 @@ def gmail_send_message(to, subject, body):
     print("Message Id:", send_message["id"])
 
 
-if __name__ == "__main__":
-    gmail_send_message(
-        "test@example.com",
-        "Automated Email",
-        "This is an automated message."
-    )
+

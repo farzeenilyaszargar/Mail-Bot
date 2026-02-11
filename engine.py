@@ -16,7 +16,7 @@ def msgAI(coreMsg, emailId, user):
     data = {
         "model": "deepseek-chat",
         "messages": [
-            {"role": "system", "content": "You are an email writer. Just write body, avoid body or uncertainity eg. [name]"},
+            {"role": "system", "content": "You are an email writer. Just write body, no subject, avoid markdown or uncertainity eg. [name]"},
             {"role": "user", "content": f"{coreMsg}\nWrite a personalized email to {emailId} from {user}"}
         ],
         "temperature": 0.7

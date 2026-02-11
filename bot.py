@@ -16,8 +16,8 @@ def sendMail(receiver, subject, msg):
 def main():
 
     emailList = makeEmailList()
-    subject = "Nap Editor | The Next Big Update"
-    coreMsg = "I have made Nap IDE, which is just like cursor. Market it to the indivuduals properly using any method you know "
+    subject = "Prathmesh Lalan"
+    coreMsg = "Write to prathmesh and insult him funnyly using coding language"
     user = "Farzeen"
 
     # No of mails to...

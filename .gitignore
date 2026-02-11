@@ -13,3 +13,4 @@ token.json
 
 # Python virtual environment
 venv/
+sendTo.json
